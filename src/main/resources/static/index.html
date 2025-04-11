@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TODO List</h1>
+        <form id="todoForm">
+            <div class="input-wrapper">
+    <button type="button" id="toggleAll" class="dropdown-button">
+        <img src="image.png" alt="Toggle All">
+    </button>
+    <input type="text" id="newTask" placeholder="Enter task..." required />
+</div>
+
+        </form>
+        <ul id="taskList"></ul>
+        <div class="footer">
+            <span id="itemsLeft">0 items left</span>
+            <div class="filters">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="active">Active</button>
+                <button data-filter="completed">Completed</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
